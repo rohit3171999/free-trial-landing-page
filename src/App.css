@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fdfdfd;
+    color: #333;
+}
+
+.trial-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #2c3e50;
+    color: #fff;
+}
+
+.header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.header nav a:hover {
+    color: #f39c12;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    color: #fff;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #fff;
+    color: #2c3e50;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background: #f1f1f1;
+}
+
+.hero-img img {
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Features Section */
+.features {
+    padding: 60px 40px;
+    text-align: center;
+    background: #fff;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Free Trial Section */
+.trial {
+    padding: 60px 40px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.trial-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trial-form input {
+    padding: 12px;
+    margin: 10px 0;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.trial-form button {
+    padding: 12px 20px;
+    background: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.trial-form button:hover {
+    background: #1f6391;
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 60px 40px;
+    text-align: center;
+    background: #fff;
+}
+
+.price-box {
+    background: #f9f9f9;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.price-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.price-box li {
+    margin: 8px 0;
+}
+
+.price-box button {
+    padding: 10px 20px;
+    background: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.price-box button:hover {
+    background: #1f6391;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #2c3e50;
+    color: #fff;
+}
