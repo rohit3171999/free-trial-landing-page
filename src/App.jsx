@@ -1,84 +1,152 @@
 import React from "react";
-import "./App.css";
 
 export default function App() {
     return (
-        <div className="trial-container">
-            {/* Header */}
-            <header className="header">
-                <h1 className="logo">🚀 SaaSify</h1>
-                <nav>
-                    <a href="#features">Features</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#trial">Start Free Trial</a>
-                </nav>
-            </header>
-
+        <div style={styles.page}>
             {/* Hero Section */}
-            <section className="hero">
-                <div className="hero-text">
-                    <h2>Start Your 14-Day Free Trial Today</h2>
-                    <p>
-                        Experience the full power of <strong>SaaSify</strong> with no credit
-                        card required. Cancel anytime.
-                    </p>
-                    <a href="#trial" className="cta-btn">Get Started Free</a>
-                </div>
-                <div className="hero-img">
-                    <img src="https://via.placeholder.com/350x250" alt="Dashboard Preview" />
-                </div>
+            <section style={styles.hero}>
+                <h1 style={styles.heroTitle}>Try TaskFlow Free for 14 Days</h1>
+                <p style={styles.heroSubtitle}>
+                    Simplify your projects with powerful task management, team
+                    collaboration, and reporting tools.
+                </p>
+                <button style={styles.cta}>Start Free Trial</button>
             </section>
 
-            {/* Features Section */}
-            <section id="features" className="features">
-                <h3>Why Choose SaaSify?</h3>
-                <div className="feature-list">
-                    <div className="feature-card">
-                        <h4>📊 Powerful Analytics</h4>
-                        <p>Track performance with real-time insights and reports.</p>
+            {/* Product Benefits */}
+            <section style={styles.section}>
+                <h2 style={styles.sectionTitle}>Why Choose TaskFlow?</h2>
+                <div style={styles.benefitList}>
+                    <div style={styles.benefitBox}>
+                        <h3>✅ Task Management</h3>
+                        <p>Organize tasks, set priorities, and never miss a deadline.</p>
                     </div>
-                    <div className="feature-card">
-                        <h4>🤝 Team Collaboration</h4>
-                        <p>Work seamlessly with your team on projects and tasks.</p>
+                    <div style={styles.benefitBox}>
+                        <h3>🤝 Team Collaboration</h3>
+                        <p>Work seamlessly with your team in real-time.</p>
                     </div>
-                    <div className="feature-card">
-                        <h4>🔒 Secure & Reliable</h4>
-                        <p>Your data is encrypted and protected 24/7.</p>
+                    <div style={styles.benefitBox}>
+                        <h3>📊 Smart Reporting</h3>
+                        <p>Track progress with detailed reports and analytics.</p>
                     </div>
                 </div>
             </section>
 
-            {/* Free Trial Form */}
-            <section id="trial" className="trial">
-                <h3>Sign Up for Your Free Trial</h3>
-                <form className="trial-form">
-                    <input type="text" placeholder="Full Name" required />
-                    <input type="email" placeholder="Email Address" required />
-                    <input type="password" placeholder="Create Password" required />
-                    <button type="submit">Start Free Trial</button>
+            {/* How It Works */}
+            <section style={{ ...styles.section, background: "#f9f9f9" }}>
+                <h2 style={styles.sectionTitle}>How It Works</h2>
+                <ol style={styles.steps}>
+                    <li>Sign up for free in minutes</li>
+                    <li>Explore all premium features</li>
+                    <li>Upgrade anytime when you’re ready</li>
+                </ol>
+            </section>
+
+            {/* Trial Offer */}
+            <section style={styles.section}>
+                <h2 style={styles.sectionTitle}>What’s Included</h2>
+                <p>✅ 14 days free • ✅ All premium features • ✅ No credit card required</p>
+            </section>
+
+            {/* Sign-Up Form */}
+            <section style={{ ...styles.section, background: "#f9f9f9" }}>
+                <h2 style={styles.sectionTitle}>Start Your Free Trial</h2>
+                <form style={styles.form}>
+                    <input type="text" placeholder="Name" style={styles.input} required />
+                    <input type="email" placeholder="Email" style={styles.input} required />
+                    <input type="password" placeholder="Password" style={styles.input} required />
+                    <input type="text" placeholder="Company (Optional)" style={styles.input} />
+                    <button type="submit" style={styles.cta}>
+                        Get Started Free
+                    </button>
                 </form>
             </section>
 
-            {/* Pricing Section */}
-            <section id="pricing" className="pricing">
-                <h3>After the Trial</h3>
-                <p>Upgrade anytime to unlock premium features.</p>
-                <div className="price-box">
-                    <h4>Pro Plan</h4>
-                    <p><strong>$29/month</strong></p>
-                    <ul>
-                        <li>Unlimited Projects</li>
-                        <li>Priority Support</li>
-                        <li>Advanced Analytics</li>
-                    </ul>
-                    <button>Upgrade Plan</button>
-                </div>
+            {/* Social Proof */}
+            <section style={styles.section}>
+                <h2 style={styles.sectionTitle}>Trusted by Teams Worldwide</h2>
+                <blockquote style={styles.quote}>
+                    “TaskFlow transformed our workflow – simple, powerful, and reliable.”
+                </blockquote>
+                <blockquote style={styles.quote}>
+                    “Best productivity tool we’ve tried – our team loves it!”
+                </blockquote>
             </section>
 
             {/* Footer */}
-            <footer className="footer">
-                <p>© 2025 SaaSify. All Rights Reserved.</p>
+            <footer style={styles.footer}>
+                <p>
+                    © 2025 TaskFlow | <a href="#" style={styles.footerLink}>About</a> |{" "}
+                    <a href="#" style={styles.footerLink}>Privacy</a> |{" "}
+                    <a href="#" style={styles.footerLink}>Terms</a> |{" "}
+                    <a href="#" style={styles.footerLink}>Contact</a>
+                </p>
             </footer>
         </div>
     );
 }
+
+const styles = {
+    page: { fontFamily: "Arial, sans-serif", margin: 0, lineHeight: "1.6" },
+    hero: {
+        textAlign: "center",
+        padding: "60px 20px",
+        background: "#eef6ff",
+    },
+    heroTitle: { fontSize: "2.5rem", color: "#222", marginBottom: "10px" },
+    heroSubtitle: { fontSize: "1.2rem", color: "#555", marginBottom: "20px" },
+    cta: {
+        background: "#007bff",
+        color: "#fff",
+        border: "none",
+        padding: "12px 24px",
+        fontSize: "1rem",
+        borderRadius: "8px",
+        cursor: "pointer",
+        marginTop: "10px",
+    },
+    section: { padding: "40px 20px", textAlign: "center" },
+    sectionTitle: { fontSize: "2rem", marginBottom: "20px" },
+    benefitList: {
+        display: "flex",
+        flexWrap: "wrap",
+        gap: "20px",
+        justifyContent: "center",
+    },
+    benefitBox: {
+        flex: "1 1 250px",
+        background: "#fff",
+        padding: "20px",
+        borderRadius: "10px",
+        boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+        textAlign: "center",
+    },
+    steps: { listStyle: "decimal", maxWidth: "400px", margin: "0 auto", textAlign: "left" },
+    form: {
+        display: "flex",
+        flexDirection: "column",
+        gap: "15px",
+        maxWidth: "400px",
+        margin: "0 auto",
+    },
+    input: {
+        padding: "12px",
+        borderRadius: "6px",
+        border: "1px solid #ccc",
+        fontSize: "1rem",
+    },
+    quote: {
+        fontStyle: "italic",
+        margin: "15px auto",
+        maxWidth: "600px",
+        color: "#444",
+    },
+    footer: {
+        textAlign: "center",
+        padding: "20px",
+        background: "#222",
+        color: "#fff",
+        fontSize: "0.9rem",
+    },
+    footerLink: { color: "#fff", textDecoration: "none" },
+};
