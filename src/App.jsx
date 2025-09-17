@@ -6,6 +6,7 @@ import HowItWorks from "./components/HowItWorks.jsx";
 import TrialOfferDetails from "./components/TrialOfferDeatils.jsx";
 import SignUpForm from "./components/SignUpForm.jsx";
 import SocialProof from "./components/SocialProof.jsx";
+import Footer from "./components/Footer.jsx";
 
 export default function App() {
     return (
@@ -16,6 +17,7 @@ export default function App() {
             <TrialOfferDetails/>
             <SignUpForm/>
             <SocialProof/>
+            <Footer/>
         </>
 
     );
