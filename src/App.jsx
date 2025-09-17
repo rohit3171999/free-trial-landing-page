@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection.jsx";
 import ProductBenefits from "./components/ProductBenefits.jsx";
 import HowItWorks from "./components/HowItWorks.jsx";
 import TrialOfferDetails from "./components/TrialOfferDeatils.jsx";
+import SignUpForm from "./components/SignUpForm.jsx";
 
 export default function App() {
     return (
@@ -12,6 +13,7 @@ export default function App() {
             <ProductBenefits/>
             <HowItWorks/>
             <TrialOfferDetails/>
+            <SignUpForm/>
         </>
 
     );
