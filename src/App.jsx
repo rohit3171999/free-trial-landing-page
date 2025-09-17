@@ -3,6 +3,7 @@
 import HeroSection from "./components/HeroSection.jsx";
 import ProductBenefits from "./components/ProductBenefits.jsx";
 import HowItWorks from "./components/HowItWorks.jsx";
+import TrialOfferDetails from "./components/TrialOfferDeatils.jsx";
 
 export default function App() {
     return (
@@ -10,6 +11,7 @@ export default function App() {
             <HeroSection/>
             <ProductBenefits/>
             <HowItWorks/>
+            <TrialOfferDetails/>
         </>
 
     );
