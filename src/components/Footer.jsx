@@ -8,10 +8,10 @@ Provide important legal info and site navigation.
 export default function Footer(){
     // Data for navigation links
     const navigation = [
-        { name: 'About', href: '#' },
-        { name: 'Privacy Policy', href: '#' },
-        { name: 'Terms of Service', href: '#' },
-        { name: 'Contact', href: '#' },
+        {name: 'About', href: '#'},
+        {name: 'Privacy Policy', href: '#'},
+        {name: 'Terms of Service', href: '#'},
+        {name: 'Contact', href: '#'},
     ];
 
     // Data for social media links with SVG icons
